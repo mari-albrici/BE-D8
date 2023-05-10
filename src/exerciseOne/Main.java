@@ -11,8 +11,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		ThreadOne asterisk = new ThreadOne();
-		ThreadTwo hashtag = new ThreadTwo();
+		ThreadOne asterisk = new ThreadOne("*");
+		ThreadOne hashtag = new ThreadOne("#");
 		
 		asterisk.start();
 		hashtag.start();
