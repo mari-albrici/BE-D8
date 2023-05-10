@@ -20,7 +20,7 @@ public class ThreadPartialSum extends Thread {
 			partialSumOne += number;
 		}
 		
-		System.out.println("Partial sum one: " + partialSumOne);
+		System.out.println("Partial sum: " + partialSumOne);
 	}
 	
 	public int getSum() {

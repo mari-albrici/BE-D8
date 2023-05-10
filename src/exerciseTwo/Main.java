@@ -36,38 +36,27 @@ public class Main {
 		ThreadPartialSum partialTwo = new ThreadPartialSum(numberTwo);
 		ThreadPartialSum partialThree = new ThreadPartialSum(numberThree);
 		
-		partialOne.start();
+		
 		
 		try {
+			partialOne.start();
 			partialOne.join();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		partialTwo.start();
-		
-		try {
+			
+			partialTwo.start();
 			partialTwo.join();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		partialThree.start();
-		
-		try {
+			
+			partialThree.start();
 			partialThree.join();
+			
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			Main.logger.error("SOMETHING WENT WRONG:" + e);
 		}
+		
 		
 		int totalResult = partialOne.getSum() + partialTwo.getSum() + partialThree.getSum();
 		
-		System.out.println(totalResult);
-		
-		
+		System.out.println("The total sum is: " + totalResult);
 		
 	}
 
