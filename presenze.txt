@@ -1,15 +1,1 @@
-Mario, 10
-Mario, 10
-Luigi, 8
-Mario, 10
-Luigi, 8
-Wario, 18
-Princess Peach, 56
-Mario, 10
-Luigi, 8
-Wario, 18
-Princess Peach, 56
-Mario, 10
-Luigi, 8
-Wario, 18
-Princess Peach, 56
+[Mario, 10, Luigi, 8, Wario, 18, Princess Peach, 56]
