@@ -13,10 +13,11 @@ public class RegistroPresenze {
 
 	private static File file = new File("presenze.txt");
 	
-	static String user001 = "Mario, 10";
-	static String user002 = "Luigi, 8";
-	static String user003 = "Wario, 18";
-	static String user004 = "Princess Peach, 56";
+	Presenza user1 = new Presenza("Mario", 10);
+	Presenza user2 = new Presenza("Luigi", 20);
+	Presenza user3 = new Presenza("Andrea", 15);
+	Presenza user4 = new Presenza("Matteo", 18);
+	
 	
 	public static void main(String[] args) {
 		
@@ -34,7 +35,7 @@ public class RegistroPresenze {
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
-		
+//		
 //		try {
 //			clear();
 //			System.out.print("Cleared file");
@@ -58,6 +59,6 @@ public class RegistroPresenze {
 	}
 	
 	public static void clear() throws IOException{
-		FileUtils.delete(file);
+		FileUtils.writeStringToFile(file, "", "UTF-8", false);
 	}
 }

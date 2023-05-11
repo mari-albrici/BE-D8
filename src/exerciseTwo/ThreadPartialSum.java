@@ -11,7 +11,7 @@ public class ThreadPartialSum extends Thread {
 	}
 	
 
-	public int partialSumOne = 0;
+	private int partialSumOne = 0;
 	
 	@Override
 	public void run() {
